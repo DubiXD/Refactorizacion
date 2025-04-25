@@ -63,7 +63,11 @@ def main():
         #extraer método
         n = input("Ingrese su nombre: ")
         a = input("Ingrese su apellido: ")
-        e = int(input("Ingrese su edad: "))
+        try:
+            e = int(input("Ingrese su edad: "))
+        except ValueError:
+            print("Edad inválida")
+            return
         t = input("Ingrese su número de teléfono: ")
         c = input("Ingrese su correo electrónico: ")
 
